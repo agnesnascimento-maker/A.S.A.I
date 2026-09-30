@@ -1,0 +1,284 @@
+/* Reset básico de aluno */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f57c00;
+    padding: 20px;
+}
+
+/* Container central */
+.cartao {
+    background-color: white;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.logo h1 {
+    color: #2b2661;
+    font-size: 22px;
+}
+
+.logo p {
+    font-size: 10px;
+    color: #666;
+    letter-spacing: 1px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-size: 13px;
+}
+
+/* Banner */
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.banner h2 {
+    color: #2b2661;
+    font-size: 26px;
+    line-height: 1.1;
+}
+
+.desenho-chave {
+    font-size: 35px;
+}
+
+/* Formulário e Seções */
+.secao {
+    margin-bottom: 15px;
+}
+
+.secao h3 {
+    font-size: 14px;
+    margin-bottom: 6px;
+    color: #000;
+}
+
+label {
+    display: block;
+    font-size: 11px;
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
+input, select, textarea {
+    width: 100%;
+    background-color: #d1d5db;
+    border: none;
+    padding: 6px;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+textarea {
+    height: 45px;
+    resize: none;
+}
+
+/* Tabela e Clientes */
+.linha-busca {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.btn-novo {
+    background-color: #e5c8b0;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 12px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.tabela {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #d1d5db;
+    font-size: 11px;
+    margin-bottom: 8px;
+}
+
+.tabela th, .tabela td {
+    border: 1px solid #a3a3a3;
+    padding: 5px;
+    text-align: left;
+}
+
+.btn-laranja {
+    width: 100%;
+    background-color: #f57c00;
+    color: white;
+    border: none;
+    padding: 8px;
+    font-weight: bold;
+    font-size: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* Disposição dos Inputs (Grids / Flex) */
+.linha-4 {
+    display: flex;
+    gap: 6px;
+}
+
+.linha-3 {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 6px;
+}
+
+.linha-2 {
+    display: flex;
+    gap: 10px;
+}
+
+.linha-2 > div {
+    flex: 1;
+}
+
+.campo {
+    flex: 1;
+}
+
+.campo-pequeno {
+    width: 32%;
+}
+
+.linha-defeito {
+    display: flex;
+    gap: 6px;
+}
+
+.flex-2 {
+    flex: 2;
+}
+
+.caixa-foto {
+    background-color: #e5e7eb;
+    border: 2px solid #f87171;
+    border-radius: 8px;
+    text-align: center;
+    padding: 8px;
+    font-size: 18px;
+}
+
+/* Peças e Serviços */
+.caixa-opcional {
+    background-color: #fef2f2;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.btn-cinza {
+    background-color: #d1d5db;
+    border: none;
+    padding: 4px 8px;
+    font-weight: bold;
+    font-size: 11px;
+    border-radius: 4px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.campos-duplos {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.campos-duplos span {
+    font-weight: bold;
+    color: #555;
+}
+
+/* Rodapé */
+footer {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+    margin-top: 10px;
+    font-size: 11px;
+}
+
+.bloco-rodapé {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.border-lado {
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    padding: 0 10px;
+}
+
+.quadrado-os {
+    background-color: #2563eb;
+    color: white;
+    font-weight: bold;
+    padding: 6px 8px;
+    border-radius: 6px;
+}
+
+.legenda p {
+    margin-bottom: 2px;
+}
+
+.ponto {
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+}
+
+.amarelo { background-color: #facc15; }
+.vermelho { background-color: #ef4444; }
+.verde { background-color: #22c55e; }
+
+.icone-redondo {
+    border: 1px solid #f87171;
+    color: #ef4444;
+    border-radius: 50%;
+    padding: 4px;
+}
+
+.txt-sub {
+    font-size: 9px;
+    color: #666;
+}
+
+.icone-azul {
+    color: #2563eb;
+    font-size: 16px;
+}
