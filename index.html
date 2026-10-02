@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de OS - ASAI Manutenções</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="cartao">
+
+        <header>
+            <div class="logo">
+                <h1>A.S.A.I.</h1>
+                <p>MANUTENÇÕES</p>
+            </div>
+            <ul class="menu">
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Artigos</a></li>
+                <li><a href="#">Suporte</a></li>
+            </ul>
+        </header>
+
+        <div class="banner">
+            <h2>CADASTRO<br>DE OS.</h2>
+            <div class="desenho">
+                <img src="ferramentas.png" alt="Ferramentas">
+            </div>
+        </div>
+
+        <form>
+            
+            <section class="secao">
+                <h3>1. Dados do Cliente</h3>
+                <div class="linha-busca">
+                    <input type="text" placeholder="Buscar Cliente (Nome, CPF/CNPJ)">
+                    <button type="button" class="btn-novo">Novo Cliente</button>
+                </div>
+
+                <table class="tabela">
+                    <thead>
+                        <tr>
+                            <th>Código</th>
+                            <th>Nome</th>
+                            <th>CPF/CNPJ</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>001</td>
+                            <td>Agnes Aisha </td>
+                            <td>123.456.789-00</td>
+                        </tr>
+                        <tr>
+                            <td>002</td>
+                            <td>Catarina Silva</td>
+                            <td>00.123.456/0001-99</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <button type="button" class="btn-laranja">CADASTRAR-SE AGORA</button>
+            </section>
+
+            <section class="secao">
+                <h3>2. Dados do Equipamento</h3>
+                <div class="grid-4">
+                    <div>
+                        <label>Equipamento</label>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <label>Marca</label>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <label>Modelo</label>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <label>Número de Série</label>
+                        <input type="text">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Bloco 3: Defeito -->
+            <section class="secao">
+                <h3>3. Detalhamento do Defeito</h3>
+                <div class="linha-defeito">
+                    <div class="campo-largo">
+                        <label>Descrição do Defeito 🔍</label>
+                        <textarea placeholder="Descreva o problema detalhadamente..."></textarea>
+                    </div>
+                    <div class="campo-pequeno">
+                        <label>Prioridade</label>
+                        <select>
+                            <option>Baixa</option>
+                            <option selected>Média</option>
+                            <option>Alta</option>
+                        </select>
+                    </div>
+                    <div class="campo-pequeno">
+                        <label>Imagem</label>
+                        <div class="caixa-foto">📥</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Bloco 4: Agendamento -->
+            <section class="secao">
+                <h3>4. Atribuição e Agendamento</h3>
+                <div class="grid-3">
+                    <div>
+                        <label>Técnico Responsável</label>
+                        <select>
+                            <option value=""></option>
+                            <option>Sofia</option>
+                            <option>Ananda</option>
+                            <option>Isabelli</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label>Data de Agendamento 📅</label>
+                        <input type="date">
+                    </div>
+                    <div>
+                        <label>Hora de início</label>
+                        <input type="time">
+                    </div>
+                </div>
+                <div class="campo-hora-fim">
+                    <label>Hora do fim</label>
+                    <input type="time">
+                </div>
+            </section>
+
+            <section class="secao caixa-opcional">
+                <h3>5. Peças e Serviços (Opcional)</h3>
+                <div class="grid-2">
+                    <div>
+                        <button type="button" class="btn-cinza">Adicionar peça</button>
+                        <div class="campos-duplos">
+                            <input type="text">
+                            <span class="separador">|</span>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div>
+                        <button type="button" class="btn-cinza">Adicionar Serviço</button>
+                        <div class="campos-duplos">
+                            <input type="text">
+                            <span class="separador">|</span>
+                            <input type="text">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </form>
+
+        <footer>
+            <div class="bloco-rodapé">
+                <div class="quadrado-os">OS</div>
+                <div>
+                    <div><span class="ponto amarelo"></span> Pendente</div>
+                    <div><span class="ponto vermelho"></span> Em Análise</div>
+                    <div><span class="ponto verde"></span> Concluído</div>
+                </div>
+            </div>
+
+            <div class="bloco-rodapé border-lado">
+                <span class="icone-vermelho">🔧</span>
+                <div>
+                    <strong>Equipamento</strong>
+                    <div class="texto-sub">Descreva o uso do equipamento</div>
+                </div>
+            </div>
+
+            <div class="bloco-rodapé">
+                <span class="icone-azul">👤</span>
+                <div>
+                    <strong>Serviço</strong>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+</body>
+</html>
