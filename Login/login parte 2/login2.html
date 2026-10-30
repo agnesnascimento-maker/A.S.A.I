@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A.S.A.I. Manutenções — Criar Conta</title>
+    <!-- Fonte Inter & Ícones FontAwesome -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Estilo externo -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="wrapper">
+        <!-- Formulário -->
+        <div class="form-side">
+            <div class="brand-header">
+                <h2>Criar conta</h2>
+                <p>Insira os seus dados para aceder ao sistema</p>
+            </div>
+
+            <form id="registerForm">
+                <div class="field">
+                    <label for="nome">Nome completo</label>
+                    <div class="input-box">
+                        <i class="fa-regular fa-user left-icon"></i>
+                        <input type="text" id="nome" placeholder="O seu nome" required>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label for="email">E-mail</label>
+                    <div class="input-box">
+                        <i class="fa-regular fa-envelope left-icon"></i>
+                        <input type="email" id="email" placeholder="nome@exemplo.com" required>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label for="senha">Palavra-passe</label>
+                    <div class="input-box">
+                        <i class="fa-solid fa-lock left-icon"></i>
+                        <input type="password" id="senha" placeholder="Crie uma palavra-passe" required>
+                        <i class="fa-regular fa-eye toggle-btn" data-target="senha"></i>
+                    </div>
+                    <div class="meter">
+                        <div class="meter-fill" id="meterFill"></div>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label for="confirmar">Confirmar palavra-passe</label>
+                    <div class="input-box">
+                        <i class="fa-solid fa-shield-halved left-icon"></i>
+                        <input type="password" id="confirmar" placeholder="Repita a palavra-passe" required>
+                        <i class="fa-regular fa-eye toggle-btn" data-target="confirmar"></i>
+                    </div>
+                </div>
+
+                <label class="terms">
+                    <input type="checkbox" required>
+                    <span>Aceito os <a href="#">Termos de Uso</a> e <a href="#">Privacidade</a></span>
+                </label>
+
+                <button type="submit" class="submit-btn">Criar conta</button>
+            </form>
+
+            <p class="login-link">
+                Já tem conta? <a href="login.html">Iniciar sessão</a>
+            </p>
+        </div>
+
+        <!-- Painel Lateral da Marca -->
+        <div class="banner-side">
+            <div class="logo-icon">
+                <i class="fa-solid fa-wrench"></i>
+            </div>
+            <h1>A.S.A.I.</h1>
+            <p>Manutenções</p>
+        </div>
+    </div>
+
+    <!-- Script externo -->
+    <script src="script.js"></script>
+</body>
+</html>
